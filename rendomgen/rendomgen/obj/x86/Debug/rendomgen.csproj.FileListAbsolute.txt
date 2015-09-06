@@ -1,0 +1,7 @@
+F:\random\rendomgen\rendomgen\bin\Debug\rendomgen.exe
+F:\random\rendomgen\rendomgen\bin\Debug\rendomgen.pdb
+F:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.Form1.resources
+F:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.Properties.Resources.resources
+F:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.csproj.GenerateResource.Cache
+F:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.exe
+F:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.pdb
