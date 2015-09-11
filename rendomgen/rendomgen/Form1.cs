@@ -59,7 +59,7 @@ namespace rendomgen
         {
             string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\random\\db.accdb;Persist Security Info=False;";
 
-            string queryString = "SELECT number FROM [series] where given=0 order by number";
+            string queryString = "SELECT number FROM [series] where given=false order by number";
             try
             {
                 using (OleDbConnection connection = new OleDbConnection(connectionString))
@@ -85,7 +85,7 @@ namespace rendomgen
                         if (i == rInt)
                         {
                             lblNo.Text = randomno.ToString();
-                            cmd.CommandText = "Update series set given=false where [Number]=@No";
+                            cmd.CommandText = "Update series set given=true where [Number]=@No";
 
                             cmd.Parameters.Add("@No", OleDbType.Numeric).Value = randomno;
 

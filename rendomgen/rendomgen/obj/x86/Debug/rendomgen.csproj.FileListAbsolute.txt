@@ -14,3 +14,11 @@ C:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.csprojResolveAssemblyRefer
 C:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.Form1.resources
 C:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.Properties.Resources.resources
 C:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.csproj.GenerateResource.Cache
+F:\randomgit\rendomgen\rendomgen\obj\x86\Debug\rendomgen.exe
+F:\randomgit\rendomgen\rendomgen\obj\x86\Debug\rendomgen.pdb
+F:\randomgit\rendomgen\rendomgen\bin\Debug\rendomgen.exe
+F:\randomgit\rendomgen\rendomgen\bin\Debug\rendomgen.pdb
+F:\randomgit\rendomgen\rendomgen\obj\x86\Debug\rendomgen.csprojResolveAssemblyReference.cache
+F:\randomgit\rendomgen\rendomgen\obj\x86\Debug\rendomgen.Form1.resources
+F:\randomgit\rendomgen\rendomgen\obj\x86\Debug\rendomgen.Properties.Resources.resources
+F:\randomgit\rendomgen\rendomgen\obj\x86\Debug\rendomgen.csproj.GenerateResource.Cache
