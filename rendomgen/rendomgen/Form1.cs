@@ -67,7 +67,7 @@ namespace rendomgen
                     OleDbCommand command = new OleDbCommand(queryString, connection);
                     connection.Open();
 
-                    OleDbCommand cmd = new OleDbCommand("select count(*) FROM [series] where given=0", connection);
+                    OleDbCommand cmd = new OleDbCommand("select count(*) FROM [series] where given=false", connection);
 
                     int total = (Int32)cmd.ExecuteScalar();
   
@@ -85,7 +85,7 @@ namespace rendomgen
                         if (i == rInt)
                         {
                             lblNo.Text = randomno.ToString();
-                            cmd.CommandText = "Update series set given=1 where [Number]=@No";
+                            cmd.CommandText = "Update series set given=false where [Number]=@No";
 
                             cmd.Parameters.Add("@No", OleDbType.Numeric).Value = randomno;
 
@@ -106,6 +106,55 @@ namespace rendomgen
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\random\\db.accdb;Persist Security Info=False;";
+
+            string queryString = "SELECT number FROM [series] where given=true order by number";
+            try
+            {
+                using (OleDbConnection connection = new OleDbConnection(connectionString))
+                {
+                    OleDbCommand command = new OleDbCommand(queryString, connection);
+                    connection.Open();
+
+                    OleDbCommand cmd = new OleDbCommand("select count(*) FROM [series] where given=true", connection);
+
+                    int total = (Int32)cmd.ExecuteScalar();
+
+
+                    OleDbDataReader reader = command.ExecuteReader();
+
+
+                    Random r = new Random();
+                    int rInt = r.Next(1, total); //for ints
+                    int i = 1;
+                    while (reader.Read())
+                    {
+                        Int32 randomno = Convert.ToInt32(reader.GetValue(0));
+                        // lblNo.Text = randomno.ToString();
+                        if (i == rInt)
+                        {
+                            //lblNo.Text = randomno.ToString();
+                            MessageBox.Show("Winner is " + randomno.ToString());
+                            //cmd.CommandText = "Update series set given=1 where [Number]=@No";
+
+                            //cmd.Parameters.Add("@No", OleDbType.Numeric).Value = randomno;
+
+                            //cmd.ExecuteNonQuery();
+                            break;
+                        }
+                        i++;
+                    }
+                    reader.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to connect to data source");
+            }
         }
     }
 }

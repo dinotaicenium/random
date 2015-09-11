@@ -5,3 +5,12 @@ F:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.Properties.Resources.resou
 F:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.csproj.GenerateResource.Cache
 F:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.exe
 F:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.pdb
+F:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.csprojResolveAssemblyReference.cache
+C:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.exe
+C:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.pdb
+C:\random\rendomgen\rendomgen\bin\Debug\rendomgen.exe
+C:\random\rendomgen\rendomgen\bin\Debug\rendomgen.pdb
+C:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.csprojResolveAssemblyReference.cache
+C:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.Form1.resources
+C:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.Properties.Resources.resources
+C:\random\rendomgen\rendomgen\obj\x86\Debug\rendomgen.csproj.GenerateResource.Cache
